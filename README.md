@@ -277,7 +277,7 @@ If the API has mobile clients, download old versions of the APK file to explore 
 --------------------------------------------------------------------------------------------------------------------------
 #### API TIP 
 
-*fuzz all requests with `?callback=testjsonp` (e.g: `https://www.example.com?callback=testjsonp`). if it is supports JSONP callback funtion the response data might be hold in the callback parameter value `testjsonp(<json-response-data>)`. By defalut JSONP is vulnerable to CORS bypass. 
+fuzz all requests with `?callback=testjsonp` (e.g: `https://www.example.com?callback=testjsonp`). if it is supports JSONP callback funtion the response data might be hold in the callback parameter value `testjsonp(<json-response-data>)` this result to CORS bypass.
 
 >learn more [https://medium.com/@secureITmania/every-bug-bounty-hunter-should-know-the-evil-smile-of-the-jsonp-over-the-browsers-same-origin-438af3a0ac3b](https://medium.com/@secureITmania/every-bug-bounty-hunter-should-know-the-evil-smile-of-the-jsonp-over-the-browsers-same-origin-438af3a0ac3b)
 
